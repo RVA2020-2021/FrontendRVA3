@@ -17,6 +17,10 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatExpansionModule } from '@angular/material/expansion';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { MatDialogModule } from '@angular/material/dialog';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatSelectModule} from '@angular/material/select';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { MatNativeDateModule } from '@angular/material/core';
 
 import { HomeComponent } from './components/core/home/home.component';
 import { AboutComponent } from './components/core/about/about.component';
@@ -30,6 +34,7 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { DobavljacDialogComponent } from './components/dialogs/dobavljac-dialog/dobavljac-dialog.component';
+import { PorudzbinaDialogComponent } from './components/dialogs/porudzbina-dialog/porudzbina-dialog.component';
 
 
 @NgModule({
@@ -45,7 +50,8 @@ import { DobavljacDialogComponent } from './components/dialogs/dobavljac-dialog/
     PorudzbinaComponent,
     StavkaPorudzbineComponent,
     ArtiklDialogComponent,
-    DobavljacDialogComponent
+    DobavljacDialogComponent,
+    PorudzbinaDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -64,6 +70,10 @@ import { DobavljacDialogComponent } from './components/dialogs/dobavljac-dialog/
     MatDialogModule,
     MatFormFieldModule,
     MatInputModule,
+    MatDatepickerModule,
+    MatSelectModule,
+    MatCheckboxModule,
+    MatNativeDateModule,
     FormsModule
   ],
   providers: [],
